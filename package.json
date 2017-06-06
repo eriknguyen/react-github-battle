@@ -17,7 +17,8 @@
   "dependencies": {
     "axios": "^0.16.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
