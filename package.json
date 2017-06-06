@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
