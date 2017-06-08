@@ -1,19 +1,19 @@
 var axios = require('axios');
 
-var id = 'YOUR_GITHUB_CLIENT_ID';
-var secret = 'YOUR_SECRET_ID';
-var params = '?client_id' + id + '&client_secret=' + secret;
+var id = '26a9fb6a926836bc77b7';
+var secret = 'db08c23916375e6782dee0e189ed026628d53d39';
+var params = '?client_id=' + id + '&client_secret=' + secret;
 
 
 function getProfile (username) {
-  return axios.get('https://api.github.com/com/users/' + username + params)
+  return axios.get('https://api.github.com/users/' + username + params)
     .then(function (user) {
       return user.data;
     });
 }
 
 function getRepo (username) {
-  return axios.get('https://api.github.com/com/users/' + username + '/repos' + params + '&per_page=100')
+  return axios.get('https://api.github.com/users/' + username + '/repos' + params + '&per_page=100')
 }
 
 function getStarCount (repos) {
@@ -38,7 +38,7 @@ function getUserData (player) {
   // .all() takes in array of promises, once all promises resolved => then execute function
   return axios.all([
     getProfile(player),
-    getRepos(player)
+    getRepo(player)
   ]).then(function (data) {
     var profile = data[0];  //data[0] returned from first promises
     var repos = data[1];
