@@ -1,9 +1,13 @@
-##1. Introduction
+# Github Battle - A simple React app
+*Following React Fundamental tutorial by Tyler McGinnis*
 
-##2. Setting up dev env
+## [Click here for demo](https://erik-github-battle.firebaseapp.com/battle)
 
-##The "this" keyword - Managing and Updating State
+## Introduction
 
-###1. Implicit binding
-###2. Explecit binding
-* 
+## Setting up dev env
+
+## The "this" keyword - Managing and Updating State
+
+* Implicit binding
+* Explecit binding
